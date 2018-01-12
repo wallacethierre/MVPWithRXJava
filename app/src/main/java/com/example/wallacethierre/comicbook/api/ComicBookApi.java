@@ -1,5 +1,9 @@
 package com.example.wallacethierre.comicbook.api;
 
+import com.example.wallacethierre.comicbook.model.ComicBook;
+
+import java.util.List;
+
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 
@@ -10,6 +14,6 @@ import retrofit2.http.GET;
 public interface ComicBookApi {
 
     @GET("/comic_books/")
-    Observable<ComicBookApi> getBooks();
+    Observable<List<ComicBook>> getBooks();
 
 }
